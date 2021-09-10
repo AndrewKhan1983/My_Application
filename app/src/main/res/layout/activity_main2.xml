@@ -2,36 +2,36 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical" >
+    android:orientation="vertical">
+
+
     <TextView
-        android:id="@+id/header"
+        android:id="@+id/text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Welcome"
-        android:layout_weight="1"
-        android:paddingLeft="150dp"
-        android:paddingTop="100dp"
-        android:background="#cccfff"
-        android:textSize="26sp" />
-    <TextView
-        android:id="@+id/header2"
+        android:text="result"
+        android:textSize="23sp"
+        android:textColor="#0000FF"
+        android:background="#FF0000"/>
+
+    <EditText
+        android:id="@+id/edit"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="to"
-        android:paddingLeft="190dp"
-        android:paddingTop="100dp"
-        android:layout_weight="1"
-        android:background="#ffccfc"
-        android:textSize="26sp" />
-    <TextView
-        android:id="@+id/header3"
-        android:layout_width="match_parent"
+        android:inputType="textMultiLine"
+        android:hint="ввод"
+        android:textColor="@color/black"
+        android:lines="2"
+        android:background="#32CD32"/>
+
+    <Button
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Android"
-        android:paddingLeft="150dp"
-        android:paddingTop="100dp"
-        android:layout_weight="1"
-        android:background="#cfcfcf"
-        android:textSize="26sp" />
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:onClick="send"
+        android:text="Enter" />
 </LinearLayout>
+
+
 

@@ -3,6 +3,9 @@ package com.example.myapplication;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.EditText;
+import android.widget.ScrollView;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
@@ -11,14 +14,15 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
+        }
+        public void send (View view){
+        EditText editText = (EditText) findViewById(R.id.edit);
+        TextView textView = (TextView) findViewById(R.id.text);
+        textView.setText(editText.getText());
+        textView.setTextSize(28);
+        textView.setTextColor(0X66b37ab);
 
-        TextView textView = (TextView) findViewById(R.id.header);
-        textView.setText("Hello");
 
-        TextView textView2 = (TextView) findViewById(R.id.header2);
-        textView.setText("from");
 
-        TextView textView3 = (TextView) findViewById(R.id.header3);
-        textView.setText("Java!!!");
     }
 }

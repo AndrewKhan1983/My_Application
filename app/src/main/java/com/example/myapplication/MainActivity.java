@@ -2,6 +2,7 @@ package com.example.myapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -20,7 +21,8 @@ public class MainActivity extends AppCompatActivity {
         TextView textView = (TextView) findViewById(R.id.text);
         textView.setText(editText.getText());
         textView.setTextSize(28);
-        textView.setTextColor(0X66b37ab);
+        textView.setTextColor(0X66b37ab4);
+        textView.setTypeface(Typeface.create("casual",Typeface.NORMAL));
 
 
 

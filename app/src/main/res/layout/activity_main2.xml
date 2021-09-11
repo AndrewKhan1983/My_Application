@@ -12,6 +12,7 @@
         android:text="result"
         android:textSize="23sp"
         android:textColor="#0000FF"
+        android:fontFamily="casual"
         android:background="#FF0000"/>
 
     <EditText

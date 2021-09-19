@@ -6,26 +6,47 @@
 
 
     <TextView
-        android:id="@+id/text"
+        android:id="@+id/textname"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="result"
+        android:text="Name"
         android:textSize="23sp"
-        android:textColor="#0000FF"
+        android:textColor="#6C161616"
         android:fontFamily="casual"
-        android:background="#FF0000"/>
+        android:background="#2196F3"/>
 
     <EditText
-        android:id="@+id/edit"
+        android:id="@+id/editname"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textMultiLine"
         android:hint="ввод"
         android:textColor="@color/black"
         android:lines="2"
-        android:background="#32CD32"/>
+        android:background="#3251CD"/>
+
+    <TextView
+        android:id="@+id/textbirth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Age"
+        android:textSize="23sp"
+        android:textColor="#0B0C0C"
+        android:fontFamily="casual"
+        android:background="#009688"/>
+
+    <EditText
+        android:id="@+id/editbirth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="ввод"
+        android:textColor="@color/black"
+        android:lines="1"
+        android:background="#CDDC39"/>
 
     <Button
+        android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
